@@ -363,7 +363,10 @@ body {
   cursor: pointer;
   transition: all 0.2s;
 }
-
+.mobile-dropdown-toggle3 a{
+  text-decoration: none;
+  color: #4b5563;
+}
 .mobile-dropdown-toggle3:hover {
   color: #1f2937;
   background-color: #f3f4f6;
@@ -1360,14 +1363,22 @@ main {
 
 .service-title-m {
   display: flex;
-  align-items: center;
+  align-items: left;
   margin-bottom: 1rem;
+  justify-items: center;
+  flex-direction: column;
 }
 
 .service-title-m h3 {
   font-size: 16px;
   font-weight: 500;
   color: #1a1a1a;
+  margin-left: 0.5rem;
+  padding-bottom: 20px;
+}
+.service-title-m p{
+  font-size: 14px;
+  color: #d1d5db;
   margin-left: 0.5rem;
 }
 .service-card-m:hover {

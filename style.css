@@ -1382,7 +1382,7 @@ main {
 }
 .service-title-m p{
   font-size: 14px;
-  color: rgb(230, 229, 229);
+  color: black;
   text-align: left;
 }
 .service-card-m:hover {
@@ -1391,7 +1391,7 @@ main {
 }
 
 .service-card-m p {
-  color: rgb(163, 161, 161);
+  color: black;
 } 
 .text-glob {
   padding-bottom: 20px;

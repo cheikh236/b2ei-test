@@ -13,6 +13,7 @@
 />
     <link rel="icon" type="image/x-icon" href="">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     <!-- Social Bar -->
@@ -241,7 +242,7 @@
 
             <!-- Contact Form -->
             <div class="form-container">
-                <form id="contactForm" class="contact-form">
+                <form id="contactForm" class="contact-form" action="https://formsubmit.co/cheikh1652@gmail.com" method="POST">
                     <div class="form-group">
                         <label for="email">Email <span class="danger">*</span></label>
                         <input
@@ -406,7 +407,6 @@
   <script>
     AOS.init();
   </script>
-
-    
+  <script src="email.js"></script>    
 </body>
 </html>

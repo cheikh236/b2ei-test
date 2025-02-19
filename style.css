@@ -8,12 +8,12 @@
 }
 
 :root {
-    --primary: #800707;
+    --primary: #b92323;
     --primary-dark: #1d4ed8;
     --gray-50: #f9fafb;
     --gray-600: #4b5563;
     --gray-800: #1f2937;
-    --gray-900: #054b0e;
+    --gray-900: #0fac4b;
 }
 
 body {
@@ -108,7 +108,7 @@ body {
     font-size: 15px;
 }
 
-.logo {
+.logo img{
     display: flex;
     align-items: center;
     gap: 0.9rem;
@@ -184,7 +184,7 @@ body {
 .brand-name3 {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #1f2937;
+  color: #0fac4b;
 }
 
 /* Desktop Menu */
@@ -224,7 +224,7 @@ body {
 }
 
 .nav-link3:hover {
-  color: #1f2937;
+  color: #0fac4b;
   background-color: #f3f4f6;
 }
 
@@ -279,7 +279,7 @@ body {
 
 .dropdown-item3:hover {
   background-color: #f3f4f6;
-  color: #1f2937;
+  color: #0fac4b;
 }
 
 /* Mobile Menu Button */
@@ -288,7 +288,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
-  color: #054b0e;
+  color: #0fac4b;
   background: none;
   border: none;
   border-radius: 0.375rem;
@@ -297,7 +297,7 @@ body {
 }
 
 .mobile-menu-button3:hover {
-  color: #800707;
+  color: #b92323;
   
 }
 
@@ -368,7 +368,7 @@ body {
   color: #4b5563;
 }
 .mobile-dropdown-toggle3:hover {
-  color: #1f2937;
+  color: #0fac4b;
   background-color: #f3f4f6;
 }
 
@@ -388,7 +388,7 @@ body {
 }
 
 .mobile-dropdown-item3:hover {
-  color: #1f2937;
+  color: #0fac4b;
   background-color: #f3f4f6;
 }
 
@@ -396,7 +396,7 @@ body {
 /* Hero Section */
 .hero {
     height: 65vh;
-    background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3');
+    background-image: url('./images/homepage.JPG');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -452,7 +452,7 @@ body {
     flex-direction: column;
 }
 .btn1, .btn2{
-    background-color: #800707;
+    background-color: #b92323;
     color: white;
     border: none;
     padding: 15px 0;
@@ -461,7 +461,7 @@ body {
     cursor: pointer;
 }
 .btn1:hover, .btn2:hover{
-    background-color: #054b0e;
+    background-color: #0fac4b;
     color: white;
     transition: all .6s ease-in;
     
@@ -473,7 +473,7 @@ body {
 
   .services h2{
       font-size: 25px;
-      color: #054b0e;
+      color: #0fac4b;
       text-align: center;
       padding: 40px 0;
       font-weight: 500;
@@ -568,14 +568,14 @@ body {
 }
 
 .text-green-500 {
-  color: #054b0e;
+  color: #0fac4b;
 }
 .text-gray-600{
   font-size: 15px;
 }
 .text-2xl {
   font-size: 25px;
-  color: #054b0e;
+  color: #0fac4b;
   text-align: center;
 }
 
@@ -612,8 +612,8 @@ body {
 }
 
 .tab-button.active {
-  color: #054b0e;
-  border-bottom-color: #800707;
+  color: #0fac4b;
+  border-bottom-color: #b92323;
 }
 
 .icon {
@@ -659,7 +659,7 @@ body {
   text-decoration: none;
 }
 .info-card {
-  background-color: #054b0e;
+  background-color: #0fac4b;
   color: white;
   overflow: hidden;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
@@ -667,7 +667,7 @@ body {
 
 .info-card-image {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -700,7 +700,7 @@ body {
 }
 
 .service-info {
-  background-color: #054b0e;
+  background-color: #0fac4b;
   color: white;
   padding: 1rem;
   width: 70%;
@@ -752,7 +752,7 @@ body {
     
 }
 .contact-item h4{
-    color: #800707;
+    color: #b92323;
     font-size: 1.3rem;
 }
 .contact-item a{
@@ -789,7 +789,7 @@ body {
   }
   .dropbtn:focus,
 .dropbtn:hover {
-    color: #800707;
+    color: #b92323;
 }
   .container-slide{
     width: 1120px;
@@ -863,7 +863,7 @@ body {
   .content-box .user-profession{
     font-size: 15px;
     font-weight: 500;
-    color: #054b0e;
+    color: #0fac4b;
     padding-bottom: 20px;
     padding-top: 20px;
 
@@ -914,7 +914,7 @@ body {
     font-size: 15px;
     font-weight: 500;
     border: none;
-    background: #800707;
+    background: #b92323;
     color: #fff;
     border-radius: 6px;
     z-index: 1;
@@ -929,7 +929,7 @@ body {
     width: 0;
     top: 0;
     left: 0;
-    background: #054b0e;
+    background: #0fac4b;
     transition: 0.5s;
     z-index: -1;
   }
@@ -937,7 +937,7 @@ body {
     width: 100%;
   }
   .slider-wrapper .swiper-pagination-bullet{
-    background: #800707;
+    background: #b92323;
     height: 13px;
     width: 13px;
     opacity: 0.5;
@@ -946,12 +946,12 @@ body {
     opacity: 1;
   }
   .slider-wrapper .swiper-slide-button{
-    color: #054b0e;
+    color: #0fac4b;
     margin-top: -40px;
     transition: 0.5s;
   }
   .slider-wrapper .swiper-slide-button:hover{
-    color: #800707;
+    color: #b92323;
   }
   /* Responsive Code */
   @media screen and (max-width: 768px) {
@@ -987,7 +987,7 @@ body {
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #054b0e;color: white;}
+  .dropdown-content a:hover {background-color: #0fac4b;color: white;}
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
@@ -1205,7 +1205,7 @@ body {
 .icon {
   width: 1.25rem;
   height: 1.25rem;
-  color: #16a34a;
+  color: #0fac4b;
   flex-shrink: 0;
 }
 
@@ -1257,7 +1257,7 @@ body {
 .form-select:focus,
 .form-textarea:focus {
   outline: none;
-  border-color: #16a34a;
+  border-color: #0fac4b;
   box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
 }
 
@@ -1302,7 +1302,7 @@ body {
 .submit-button {
   width: 100%;
   padding: 0.625rem 1.25rem;
-  background-color: #16a34a;
+  background-color: #0fac4b;
   color: white;
   border: none;
   border-radius: 0.375rem;
@@ -1313,7 +1313,7 @@ body {
 }
 
 .submit-button:hover {
-  background-color: #15803d;
+  background-color: #0fac4b;
 }
 
 .submit-button:focus {
@@ -1343,9 +1343,12 @@ main {
     margin: 3rem auto;
     max-width: 1100px;
 }
+.services-grid-m a{
+  text-decoration: none;
+}
 
 .service-card-m {
-  background: white;
+    background: #0fac4b;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1363,7 +1366,7 @@ main {
 
 .service-title-m {
   display: flex;
-  align-items: left;
+  align-items: center;
   margin-bottom: 1rem;
   justify-items: center;
   flex-direction: column;
@@ -1372,14 +1375,15 @@ main {
 .service-title-m h3 {
   font-size: 16px;
   font-weight: 500;
-  color: #1a1a1a;
+  color: white;
   margin-left: 0.5rem;
   padding-bottom: 20px;
+  text-align: center;
 }
 .service-title-m p{
   font-size: 14px;
-  color: #d1d5db;
-  margin-left: 0.5rem;
+  color: rgb(230, 229, 229);
+  text-align: left;
 }
 .service-card-m:hover {
   transform: translateY(-5px);
@@ -1387,7 +1391,7 @@ main {
 }
 
 .service-card-m p {
-  color: #666;
+  color: rgb(163, 161, 161);
 } 
 .text-glob {
   padding-bottom: 20px;
@@ -1426,7 +1430,7 @@ main {
 .form-group label {
   font-size: 0.875rem;
   font-weight: 500;
-  color: #054b0e;
+  color: #0fac4b;
 }
 
 .form-group input,
@@ -1441,7 +1445,7 @@ main {
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #054b0e;
+  border-color: #0fac4b;
   box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
 }
 
@@ -1480,6 +1484,9 @@ main {
   .form-container, .map-container {
     width: 70%;
   }
+  .log{
+    width: 80px;
+  }
 }
 @media(max-width:425px){
   .form-container, .map-container {
@@ -1512,7 +1519,7 @@ main {
 
 /* Submit button */
 .submit-button {
-  background-color: #054b0e;
+  background-color: #0fac4b;
   color: white;
   padding: 0.75rem 1rem;
   border: none;
@@ -1523,7 +1530,7 @@ main {
 }
 
 .submit-button:hover {
-  background-color: #800707;
+  background-color: #b92323;
 }
 
 .submit-button:focus {

@@ -391,12 +391,69 @@ body {
   color: #0fac4b;
   background-color: #f3f4f6;
 }
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
+.contact-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s;
+  min-width: 220px;
+}
+
+.contact-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.15);
+}
+
+.whatsapp-button {
+  background-color: #0fac4b;
+}
+
+.whatsapp-button:hover {
+  background-color: #045f20;
+}
+
+.email-button {
+  background-color: #b92323;
+}
+
+.email-button:hover {
+  background-color: #a00101;
+}
+.call-button {
+  background-color: #0fac4b;
+}
+.call-button:hover{
+  background-color: #045f20;
+}
+
+.contact-button i {
+  width: 24px;
+  height: 24px;
+}
+
+.button-text {
+  flex-grow: 1;
+  text-align: center;
+}
 /* test */
 /* Hero Section */
 .hero {
-    height: 65vh;
-    background-image: url('./images/homepage.JPG');
+    height: 80vh;
+    background-image: url('./images/homepage.JPG  ');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1494,7 +1551,10 @@ main {
   }
   .form-group label, .submit-button {
     font-size: 14px;
-}
+  }
+  .glob{
+    height: 20vh;
+  }
 }
 
 /* Consent checkbox */

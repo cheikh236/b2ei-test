@@ -1404,16 +1404,11 @@ main {
   text-decoration: none;
 }
 
-.service-card-m {
-    background: #0fac4b;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+
 
 .service-card-m img {
   width: 100%;
-  height: 12rem;
+  height: 20rem;
   object-fit: cover;
 }
 
@@ -1443,8 +1438,9 @@ main {
   text-align: left;
 }
 .service-card-m:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+  transition: all .5s ease;
+ 
 }
 
 .service-card-m p {

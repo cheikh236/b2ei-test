@@ -452,7 +452,7 @@ body {
 /* test */
 /* Hero Section */
 .hero {
-    height: 60vh;
+    height: 100vh;
     background-image: url('./images/homepage.JPG  ');
     background-size: cover;
     background-position: center;
@@ -801,7 +801,12 @@ body {
     gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-
+.pc{
+  padding-top: 20px;
+}
+.pc1{
+  padding-top: 22px;
+}
 .contact-item {
     display: flex;
     align-items: top;
@@ -817,7 +822,6 @@ body {
     color: black;
     padding: 1px;   
 }
-.contact-item a:hover
 
 /* Footer */
 .footer {
@@ -1146,14 +1150,15 @@ body {
 .service-info p {
   font-size: 13px;
 }
+.nav-content3 {
+  padding: 0 2px;
+}
+.social-links{
+  padding: 0 2px;
+}
 }
 @media(max-width: 375px){
-  .nav-container3 {
-    padding: 0;
-}
-.social-links {
-  padding-right: 6rem;
-}
+  
 .service-info h3 {
   font-size: 15px;
 }
@@ -1166,9 +1171,7 @@ body {
 }
 
 @media(max-width: 320px){
-  .social-links {
-    padding-right: 5rem;
-}
+  
 .hero-left p {
   font-size: 13px;
 }
@@ -1384,11 +1387,10 @@ body {
 main {
   padding: 3rem 1rem;
 }
-
 .intro-m {
   max-width: 48rem;
   margin: 0 auto 4rem;
-  text-align: center;
+  text-align: left;
   color: #4b5563;
 }
 
@@ -1549,7 +1551,7 @@ main {
     font-size: 14px;
   }
   .glob{
-    height: 20vh;
+    height: 10vh;
   }
 }
 
@@ -1594,7 +1596,7 @@ main {
   box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
 }
 .glob{
-  height: 40vh;
+  height: 35vh;
   width: 100%;
 }
 /* contact page responsive start */

@@ -1156,6 +1156,9 @@ body {
 .social-links{
   padding: 0 2px;
 }
+.hero{
+  height: 75vh;
+}
 }
 @media(max-width: 375px){
   

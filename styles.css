@@ -1602,6 +1602,117 @@ main {
   height: 35vh;
   width: 100%;
 }
+.glob-1{
+    height: 35vh;
+    background-image: url('./images/tab1.JPG');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.glob-2{
+  height: 35vh;
+  background-image: url('./images/maint1.JPG');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.glob-3{
+  height: 35vh;
+  background-image: url('./images/dc1.JPG');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.glob-4{
+  height: 35vh;
+  background-image: url('./images/tab3.JPG');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.glob-5{
+  height: 35vh;
+  background-image: url('./images/installation1.jpeg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.glob-6{
+  height: 35vh;
+  background-image: url('./images/conceptionSolaire.jpeg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.glob-7{
+  height: 35vh;
+  background-image: url('./images/installation2.jpeg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.glob-8{
+  height: 35vh;
+  background-image: url('./images/mainSolare2.jpeg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.glob-9 {
+  height: 35vh;
+  background-image: url('./images/bureau.JPG');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Effet parallax */
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* contact page responsive start */
 
 /* contact page responsive end */

@@ -1159,6 +1159,9 @@ body {
 .hero{
   height: 75vh;
 }
+.btn1,.btn2{
+  font-size: 15px;
+}
 }
 @media(max-width: 375px){
   

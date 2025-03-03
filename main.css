@@ -452,7 +452,7 @@ body {
 /* test */
 /* Hero Section */
 .hero {
-    height: 80vh;
+    height: 100vh;
     background-image: url('./images/homepage.JPG  ');
     background-size: cover;
     background-position: center;

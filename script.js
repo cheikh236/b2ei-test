@@ -252,7 +252,7 @@ class Slider {
     startAutoSlide() {
         setInterval(() => {
             this.nextSlide();
-        }, 5000);
+        }, 4000);
     }
 }
 

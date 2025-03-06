@@ -132,3 +132,131 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
+function toggleOtherService() {
+    const otherServiceCheckbox = document.getElementById("autreService");
+    const otherServiceInput = document.getElementById("otherServiceInput");
+
+    // Si la case "Autres" est cochée, afficher le champ de saisie, sinon le cacher
+    if (otherServiceCheckbox.checked) {
+        otherServiceInput.style.display = "block";
+    } else {
+        otherServiceInput.style.display = "none";
+        otherServiceInput.value = ""; // Réinitialise la saisie si décoché
+    }
+}
+
+function sendWhatsAppMessage() {
+    const phoneNumber = '221784840606';
+
+    // Récupérer les valeurs du formulaire
+    const name = document.getElementById("userName").value || "Non spécifié";
+    const company = document.getElementById("companyName").value || "Non spécifié";
+    
+    const budget = document.querySelector('input[name="budget"]:checked');
+    const budgetValue = budget ? budget.value : "Non spécifié";
+
+    // Récupérer les services sélectionnés
+    let services = Array.from(document.querySelectorAll('.service:checked'))
+                        .map(checkbox => checkbox.value)
+                        .join(", ") || "Non spécifié";
+
+    // Vérifier si "Autres" est coché et récupérer la saisie utilisateur
+    const otherServiceCheckbox = document.getElementById("autreService");
+    const otherServiceInput = document.getElementById("otherServiceInput").value;
+
+    if (otherServiceCheckbox.checked && otherServiceInput.trim() !== "") {
+        services += `, ${otherServiceInput.trim()}`;
+    }
+
+    // Construire le message WhatsApp
+    const message = encodeURIComponent(
+        `Salut ! Je souhaite obtenir un devis.\n\n` +
+        `Nom : ${name}\n` +
+        `Entreprise : ${company}\n` +
+        `Budget : ${budgetValue}\n` +
+        `Services souhaités : ${services}`
+    );
+
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappURL, '_blank');
+}
+
+class Slider {
+    constructor() {
+        this.currentSlide = 0;
+        this.isAnimating = false;
+        this.slides = document.querySelectorAll('.slide');
+        this.indicatorsContainer = document.querySelector('.slide-indicators');
+        
+        this.init();
+        this.startAutoSlide();
+    }
+
+    init() {
+        // Create indicators
+        this.slides.forEach((_, index) => {
+            const indicator = document.createElement('button');
+            indicator.className = 'indicator';
+            indicator.addEventListener('click', () => this.goToSlide(index));
+            this.indicatorsContainer.appendChild(indicator);
+        });
+
+        // Show first slide
+        this.updateSlide();
+    }
+
+    updateSlide() {
+        // Update slides
+        this.slides.forEach((slide, index) => {
+            if (index === this.currentSlide) {
+                slide.classList.add('active');
+            } else {
+                slide.classList.remove('active');
+            }
+        });
+
+        // Update indicators
+        const indicators = this.indicatorsContainer.querySelectorAll('.indicator');
+        indicators.forEach((indicator, index) => {
+            if (index === this.currentSlide) {
+                indicator.classList.add('active');
+            } else {
+                indicator.classList.remove('active');
+            }
+        });
+    }
+
+    nextSlide() {
+        if (!this.isAnimating) {
+            this.isAnimating = true;
+            this.currentSlide = (this.currentSlide + 1) % this.slides.length;
+            this.updateSlide();
+            setTimeout(() => {
+                this.isAnimating = false;
+            }, 500);
+        }
+    }
+
+    goToSlide(index) {
+        if (!this.isAnimating && index !== this.currentSlide) {
+            this.isAnimating = true;
+            this.currentSlide = index;
+            this.updateSlide();
+            setTimeout(() => {
+                this.isAnimating = false;
+            }, 500);
+        }
+    }
+
+    startAutoSlide() {
+        setInterval(() => {
+            this.nextSlide();
+        }, 5000);
+    }
+}
+
+// Initialize slider when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    new Slider();
+});

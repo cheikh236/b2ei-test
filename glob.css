@@ -1,4 +1,5 @@
 /* Reset and base styles */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Viga&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
@@ -508,7 +509,7 @@ body {
     gap: 20px;
     flex-direction: column;
 }
-.btn1, .btn2{
+.hero-right .btn1{
     background-color: #b92323;
     color: white;
     border: none;
@@ -517,12 +518,17 @@ body {
     font-size: 15px; 
     cursor: pointer;
 }
-.btn1:hover, .btn2:hover{
-    background-color: #0fac4b;
-    color: white;
-    transition: all .3s ease-in;
-    
+.hero-right .btn2{
+  background-color: #0fac4b;
+  color: white;
+  border: none;
+  padding: 15px 0;
+  border-radius: 5px;
+  font-size: 15px; 
+  cursor: pointer;
 }
+
+
 
 
 
@@ -1146,21 +1152,24 @@ body {
   }
   .service-info h3 {
     font-size: 18px;
-}
-.service-info p {
-  font-size: 13px;
-}
-.nav-content3 {
-  padding: 0 2px;
-}
-.social-links{
-  padding: 0 2px;
-}
-.hero{
-  height: 75vh;
-}
-.btn1,.btn2{
-  font-size: 15px;
+  }
+  .service-info p {
+    font-size: 13px;
+  }
+  .nav-content3 {
+    padding: 0 2px;
+  }
+  .social-links{
+    padding: 0 2px;
+  }
+  .hero{
+    height: 75vh;
+  }
+  .btn1,.btn2{
+    font-size: 15px;
+  }
+  #quote-form {
+    width: 100%;
 }
 }
 @media(max-width: 375px){
@@ -1488,7 +1497,7 @@ main {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
-  min-width: 80%;
+  min-width: 50%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
   margin-top: 20px;
@@ -1851,9 +1860,19 @@ main {
   padding: 0 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
-
+.slide-content h1{
+  font-family: "Viga";
+  font-size: 2.7rem;
+  text-transform: uppercase;
+}
+.slide-content p{
+  font-size: 1.2rem;
+  color: rgb(228, 225, 225);
+}
 .hero-left {
   color: white;
 }
@@ -1903,7 +1922,26 @@ main {
       flex-direction: column;
       text-align: center;
       justify-content: center;
-      gap: 2rem;
+  }
+  .slide-content h1 {
+    font-size: 1.8rem;
+}
+
+}
+@media (max-width: 425px) {
+  .slide-content h1 {
+    font-size: 1.6rem;
+  }
+  .slide-content p, .btn1, .btn2 {
+    font-size: .95rem;
   }
 
+.tab-button {
+    font-size: .82rem;
+  }
+}
+@media (max-width: 375px) {
+  .slide-content p, .btn1, .btn2 {
+    font-size: .84rem;
+  }
 }

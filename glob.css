@@ -453,7 +453,7 @@ body {
 /* test */
 /* Hero Section */
 .hero {
-    height: 85vh;
+    height: 50vh;
     background-image: url('./images/homepage.JPG  ');
     background-size: cover;
     background-position: center;
@@ -1823,7 +1823,7 @@ main {
 
 .slider-section {
   position: relative;
-  height: 85vh;
+  height: 50vh;
   width: 100%;
   overflow: hidden;
 }

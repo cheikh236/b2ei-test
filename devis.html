@@ -237,21 +237,18 @@
             <label>Entreprise :</label>
             <input type="text" id="companyName" placeholder="Nom de l'entreprise">
     
-            <label>Budget :</label>
-            <div>
-                <input type="radio" name="budget" value="5000 - 20000"> 5.000 - 20.000 FCFA<br>
-                <input type="radio" name="budget" value="20000 - 50000"> 20.000 - 50.000 FCFA<br>
-                <input type="radio" name="budget" value="50000 - 100000"> 50.000 - 100.000 FCFA<br>
-                <input type="radio" name="budget" value="Autre"> Plus de 100.000 FCFA<br>
-            </div>
-    
             <label>Services souhaités :</label>
             <div>
-                <input type="checkbox" class="service" value="Tableautier"> Tableautier<br>
+                <input type="checkbox" class="service" value="Tableautier"> Armoire et coffret précablé<br>
                 <input type="checkbox" class="service" value="Maintenance électrique"> Maintenance électrique<br>
-                <input type="checkbox" class="service" value="Installation solaire"> Installation solaire<br>
+                <input type="checkbox" class="service" value="Installation"> Installation<br>
+                <input type="checkbox" class="service" value=" Diagnostic et contrôle"> Diagnostic et contrôle<br>
                 <input type="checkbox" class="service" id="autreService" value="Autre" onchange="toggleOtherService()"> Autres<br>
                 <input type="text" id="otherServiceInput" placeholder="Précisez votre service" style="display: none;">
+            </div>
+            <label>Budget :</label>
+            <div>
+                <input type="number" id="budget" placeholder="Votre budget">
             </div>
     
             <button onclick="sendWhatsAppMessage()">Envoyer sur WhatsApp</button>

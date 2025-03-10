@@ -174,8 +174,9 @@ function sendWhatsAppMessage() {
         `Salut ! Je souhaite obtenir un devis.\n\n` +
         `Nom : ${name}\n` +
         `Entreprise : ${company}\n` +
-        `Budget : ${budgetValue}\n` +
         `Services souhaités : ${services}`
+        `Budget : ${budgetValue}\n`
+        
     );
 
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;

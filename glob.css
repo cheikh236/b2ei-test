@@ -1907,7 +1907,7 @@ padding-bottom: 20px;
 }
 .glob-5{
   height: 35vh;
-  background-image: url('./images/installation1.jpeg');
+  background-image: url('./images/photov2.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1919,7 +1919,7 @@ padding-bottom: 20px;
 }
 .glob-6{
   height: 35vh;
-  background-image: url('./images/conceptionSolaire.jpeg');
+  background-image: url('./images/conception1.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1931,7 +1931,7 @@ padding-bottom: 20px;
 }
 .glob-7{
   height: 35vh;
-  background-image: url('./images/installation2.jpeg');
+  background-image: url('./images/installationphotov4.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1943,7 +1943,7 @@ padding-bottom: 20px;
 }
 .glob-8{
   height: 35vh;
-  background-image: url('./images/mainSolare2.jpeg');
+  background-image: url('./images/maintenance-photov4.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -2026,6 +2026,34 @@ padding-bottom: 20px;
 .glob-14 {
   height: 35vh;
   background-image: url('./images/audit1.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Effet parallax */
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.glob-15 {
+  height: 35vh;
+  background-image: url('./images/maintenance-ht-bt4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Effet parallax */
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.glob-16 {
+  height: 35vh;
+  background-image: url('./images/termo1.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Effet parallax */

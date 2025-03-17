@@ -2065,6 +2065,34 @@ padding-bottom: 20px;
   align-items: center;
   justify-content: space-between;
 }
+.glob-17 {
+  height: 35vh;
+  background-image: url('./images/realisation.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Effet parallax */
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.glob-18 {
+  height: 35vh;
+  background-image: url('./images/contactus.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Effet parallax */
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 /* contact page responsive start */
 

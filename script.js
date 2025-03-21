@@ -133,54 +133,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-function toggleOtherService() {
-    const otherServiceCheckbox = document.getElementById("autreService");
-    const otherServiceInput = document.getElementById("otherServiceInput");
-
-    // Si la case "Autres" est cochée, afficher le champ de saisie, sinon le cacher
-    if (otherServiceCheckbox.checked) {
-        otherServiceInput.style.display = "block";
-    } else {
-        otherServiceInput.style.display = "none";
-        otherServiceInput.value = ""; // Réinitialise la saisie si décoché
+// Show/hide other service input based on checkbox
+document.getElementById('autreService').addEventListener('change', function() {
+    const otherServiceInput = document.getElementById('otherServiceInput');
+    otherServiceInput.style.display = this.checked ? 'block' : 'none';
+    if (!this.checked) {
+        otherServiceInput.value = '';
     }
-}
+});
 
 function sendWhatsAppMessage() {
     const phoneNumber = '221784840606';
 
-    // Récupérer les valeurs du formulaire
-    const name = document.getElementById("userName").value || "Non spécifié";
-    const company = document.getElementById("companyName").value || "Non spécifié";
-    
-    const budget = document.querySelector('input[name="budget"]:checked');
-    const budgetValue = budget ? budget.value : "Non spécifié";
+    // Get form values
+    const name = document.getElementById('userName').value || 'Non spécifié';
+    const company = document.getElementById('companyName').value || 'Non spécifié';
+    const budget = document.getElementById('budget').value || 'Non spécifié';
 
-    // Récupérer les services sélectionnés
-    let services = Array.from(document.querySelectorAll('.service:checked'))
-                        .map(checkbox => checkbox.value)
-                        .join(", ") || "Non spécifié";
+    // Get selected services
+    const serviceCheckboxes = document.querySelectorAll('.service:checked');
+    let services = Array.from(serviceCheckboxes)
+        .map(checkbox => {
+            if (checkbox.value === 'Autre') {
+                const otherService = document.getElementById('otherServiceInput').value.trim();
+                return otherService || 'Autres';
+            }
+            return checkbox.value;
+        })
+        .join(', ');
 
-    // Vérifier si "Autres" est coché et récupérer la saisie utilisateur
-    const otherServiceCheckbox = document.getElementById("autreService");
-    const otherServiceInput = document.getElementById("otherServiceInput").value;
-
-    if (otherServiceCheckbox.checked && otherServiceInput.trim() !== "") {
-        services += `, ${otherServiceInput.trim()}`;
+    if (!services) {
+        services = 'Non spécifié';
     }
 
-    // Construire le message WhatsApp
+    // Build WhatsApp message
     const message = encodeURIComponent(
         `Salut ! Je souhaite obtenir un devis.\n\n` +
         `Nom : ${name}\n` +
         `Entreprise : ${company}\n` +
-        `Services souhaités : ${services}`
-        `Budget : ${budgetValue}\n`
-        
+        `Services souhaités : ${services}\n` +
+        `Budget : ${budget}\n`
     );
 
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
-    window.open(whatsappURL, '_blank');
+    // Open WhatsApp with the message
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
 }
 
 class Slider {

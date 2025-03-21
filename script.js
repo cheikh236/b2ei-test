@@ -146,42 +146,49 @@ function toggleOtherService() {
     }
 }
 
+function toggleOtherService() {
+    const otherServiceInput = document.getElementById("otherServiceInput");
+    const otherServiceCheckbox = document.getElementById("autreService");
+    otherServiceInput.style.display = otherServiceCheckbox.checked ? "block" : "none";
+}
+
 function sendWhatsAppMessage() {
     const phoneNumber = '221784840606';
 
     // Récupérer les valeurs du formulaire
-    const name = document.getElementById("userName").value || "Non spécifié";
-    const company = document.getElementById("companyName").value || "Non spécifié";
-    
-    const budget = document.querySelector('input[name="budget"]:checked');
-    const budgetValue = budget ? budget.value : "Non spécifié";
+    const name = document.getElementById("userName").value.trim() || "Non spécifié";
+    const company = document.getElementById("companyName").value.trim() || "Non spécifié";
+    const budget = document.getElementById("budget").value.trim() || "Non spécifié";
 
     // Récupérer les services sélectionnés
     let services = Array.from(document.querySelectorAll('.service:checked'))
-                        .map(checkbox => checkbox.value)
-                        .join(", ") || "Non spécifié";
+                        .map(checkbox => checkbox.value);
 
-    // Vérifier si "Autres" est coché et récupérer la saisie utilisateur
+    // Ajouter la saisie de l'utilisateur si "Autres" est coché
     const otherServiceCheckbox = document.getElementById("autreService");
-    const otherServiceInput = document.getElementById("otherServiceInput").value;
+    const otherServiceInput = document.getElementById("otherServiceInput").value.trim();
 
-    if (otherServiceCheckbox.checked && otherServiceInput.trim() !== "") {
-        services += `, ${otherServiceInput.trim()}`;
+    if (otherServiceCheckbox.checked && otherServiceInput !== "") {
+        services.push(otherServiceInput);
     }
+
+    // Si aucun service n'est sélectionné
+    const serviceText = services.length > 0 ? services.join(", ") : "Non spécifié";
 
     // Construire le message WhatsApp
     const message = encodeURIComponent(
         `Salut ! Je souhaite obtenir un devis.\n\n` +
         `Nom : ${name}\n` +
         `Entreprise : ${company}\n` +
-        `Services souhaités : ${services}`
-        `Budget : ${budgetValue}\n`
-        
+        `Services souhaités : ${serviceText}\n` +
+        `Budget : ${budget}\n`
     );
 
+    // Ouvrir WhatsApp
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappURL, '_blank');
 }
+
 
 class Slider {
     constructor() {

@@ -2101,7 +2101,10 @@ padding-bottom: 20px;
   align-items: center;
   justify-content: space-between;
 }
-
+.container-t h2{
+  text-align: center;
+  color: #0fac4b;
+}
 
 /* contact page responsive start */
 
